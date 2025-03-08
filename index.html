@@ -5,21 +5,55 @@
 
     <meta charset="UTF-8">
     <title>首頁</title>
-    <!--. 代表class -->
+    <!--. 代表class # 代表id -->
     <style>
+        body {
+            background-color: lightblue;
+            font-family: '標楷體', 'Arial Narrow', Arial, sans-serif;
+            text-align: center
+        }
+
         .banner {
-            background-color: chartreuse;
-            color: black
+            width: 200px;
+            display: inline-block;
+            background-color: rgb(165, 148, 206);
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 24px;
+            margin: 12px;
+            padding: 6px 12px;
+        }
+
+        #title {
+            width: 100px;
+            color: blueviolet;
+            background-color: palegoldenrod;
+            font-size: 48px;
+            margin: 2px 12px 24px 32px;
+            margin-top: 64px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .tentip {
+            background-color: bisque;
+            text-align: left;
+            padding: 12px;
+            border: 1px black solid;
         }
     </style>
 
+    <!-- css練習將健身10個好處 加入div/class="tentip"
+ 將文字置左
+ 背景色改變
+-->
 
 </head>
 
 <!-- 內容顯示區 -->
 
 <body>
-    <h1 style="color:rgb(89, 23, 136);background-color:rgb(189, 241, 110) ;">我愛健身網站</h1>
+    <div id="title">我愛健身網站</div>
     <div style="background-color:rgb(247, 190, 84); ">
         <p>
             <b>健身，英文稱為workout，健身這兩個字拆開來的意思就是健康身體，通過各種運動方式或方法來增強力量、增加肌肉量、柔韌性、耐力，以及提高協調和控制身體各部分的能力來使我們的身體更強健。</b>
@@ -37,29 +71,31 @@
         <img src="https://www.ladysfitness.com.hk/wp-content/uploads/2021/11/lose-weight.jpg" alt="找不到圖片" width="100%">
     </a>
 
-    <h2 class="banner">健身的10個好處</h2>
-    <ol type="i">
-        <li>增加基礎代謝率</li>
-        <li>預防疾病和提高免疫力</li>
-        <li class="banner">改善心情</li>
-        <li>改善睡眠</li>
-        <li>增加自信</li>
-        <li>增強記憶力</li>
-        <li>增強心肺能力</li>
-        <li>提升睡眠品質</li>
-        <li>釋放工作的壓力</li>
-        <li>增加肌肉助於減肥</li>
-
+    <div class="banner">健身的10個好處</div>
+    <div class="tentip">
+        <ol type="i">
+            <li>增加基礎代謝率</li>
+            <li>預防疾病和提高免疫力</li>
+            <li>改善心情</li>
+            <li>改善睡眠</li>
+            <li>增加自信</li>
+            <li>增強記憶力</li>
+            <li>增強心肺能力</li>
+            <li>提升睡眠品質</li>
+            <li>釋放工作的壓力</li>
+            <li>增加肌肉助於減肥</li>
+    </div>
     </ol>
+
     <hr>
 
-    <h2>好文章連結</h2>
+    <div>好文章連結</div>
     <li><a target="_blank" href="https://www.fe-amart.com.tw/index.php/life-style/life-info/secret-recipe/hero-6">
             健身初學者必看！10個常見的健身迷思</a></li>
 
     <li><a target="_blank" href="https://www.sportsv.net/articles/102250">「運動、健身是年輕人的專利？」—每個人都需要的體適能</a></li>
 
-    <li><a a target="_blank"
+    <li><a target="_blank"
             href="https://medium.com/%E5%81%A5%E4%BA%BA%E6%97%A5%E8%A8%98/%E5%81%9C%E6%AD%A2%E7%99%BC%E6%87%B6-%E4%BD%A0%E8%A9%B2%E5%8E%BB%E5%81%A5%E8%BA%AB%E6%88%BF%E7%9A%8410%E5%A4%A7%E7%90%86%E7%94%B1-de0c1bd93bf4">停止發懶！你該去健身房的10大理由</a>
     </li>
     <hr>
@@ -70,8 +106,8 @@
     <img src="images/pic-2.jpg" alt="" width="33%">
     <img src="images/pic-3.jpg" alt="" width="33%">
 
-
-    <h2 class="banner">一天所需卡路里</h2>
+    <hr>
+    <div class="banner">一天所需卡路里</div>
     <table border="1">
         <thead>
             <tr>
@@ -118,17 +154,18 @@
         因他的工作為坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間(=20~25大卡*65公斤)。
     </p>
     <hr>
-    <h2 class="banner">健身影片</h2>
-
-    <iframe width="48%" height="300px" src="https://www.youtube.com/embed/L1BTJsDAWjo"
-        title="7 分鐘居家徒手腹肌訓練【初級版】無裝備｜7 Min Standing Abs workout｜非常適合初學者入門也有效加强核心的訓練｜男生和女生都適合的健身訓練【健身運動】" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <iframe width="48%" height="300px" src="https://www.youtube.com/embed/KoIoiCAgxBg"
-        title="合輯／健身正妹集合 火辣健身凍未條！翹臀彎腰視角全給你" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+    <div class="banner">健身影片</div>
+    <div>
+        <iframe width="48%" height="300px" src="https://www.youtube.com/embed/L1BTJsDAWjo"
+            title="7 分鐘居家徒手腹肌訓練【初級版】無裝備｜7 Min Standing Abs workout｜非常適合初學者入門也有效加强核心的訓練｜男生和女生都適合的健身訓練【健身運動】"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="48%" height="300px" src="https://www.youtube.com/embed/KoIoiCAgxBg"
+            title="合輯／健身正妹集合 火辣健身凍未條！翹臀彎腰視角全給你" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
     <video width="100%" src="video/13236236_3840_2160_24fps.mp4" controls></video>
 
 
