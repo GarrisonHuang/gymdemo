@@ -1,0 +1,62 @@
+body {
+    background-color: lightblue;
+    font-family: '標楷體', 'Arial Narrow', Arial, sans-serif;
+    text-align: center
+}
+
+.banner {
+    width: 200px;
+    display: inline-block;
+    background-color: rgb(165, 148, 206);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+    margin: 12px;
+    padding: 6px 12px;
+}
+
+#title {
+    width: 100px;
+    color: blueviolet;
+    background-color: palegoldenrod;
+    font-size: 48px;
+    margin: 2px 12px 24px 32px;
+    margin-top: 64px;
+    padding: 12px;
+    text-align: center;
+}
+
+.tentip {
+    background-color: bisque;
+    text-align: left;
+    padding: 12px;
+    border: 1px black solid;
+}
+
+.slogan {
+    background-color: chartreuse;
+    font-size: 24px;
+}
+
+#bmi-table {
+    width: 600px;
+    height: 200px;
+    background-color: rgb(243, 243, 225);
+    margin: 0 auto;
+}
+
+#bmi-table thead {
+    background-color: brown;
+    color: white;
+}
+
+#bmi-table th {
+    font-size: 1 rem;
+    font-weight: lighter;
+}
+
+#bmi-table tbody {
+    background-color: rgb(234, 252, 155);
+    font-size: 0.8rem;
+    text-align: left;
+}

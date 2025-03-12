@@ -4,11 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>BMI計算機</title>
+    <link rel="stylesheet" href="res/style.css">
+
+    <style>
+        form {
+            border: 2px;
+            background-color: aquamarine;
+            padding: 16px;
+            width: 30%;
+            border-radius: 12px;
+            margin: 12px auto;
+            text-align: left;
+            color: white;
+            border: 2px white solid;
+        }
+
+        input {
+            width: 100%;
+            text-align: center;
+            margin: 6px auto;
+        }
+
+        input[type="date"] {
+            text-align: left
+        }
+
+        button {
+            background-color: aqua;
+            border: 0px;
+            width: 80px;
+            padding: 3px;
+            border-radius: 6px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <h1>BMI計算機</h1>
+    <div class="banner">BMI計算機</div>
     <form>
         <label for="username">姓名</label>
         <input id="username" name="username" type="text" placeholder="garrison"><br>
