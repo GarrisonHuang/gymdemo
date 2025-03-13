@@ -51,20 +51,50 @@
         * 計算BMI
         * 使用document.write輸出姓名跟bmi
         */
-        let name = prompt("姓名");
-        let height = prompt("身高");
-        let weight = prompt("體重");
 
-        let bmi = weight / (height / 100) ** 2;
-        console.log(name, height, weight, bmi);
+        // 輸入三次
+        // for i in range(3):
+        //for (let i = 0; i < 3; i++)
+        let count = 0;
+        while (true) {
+            if (count == 3) {
+                break;
+            }
+            let name = prompt("姓名");
+            let height = prompt("身高");
+            let weight = prompt("體重");
 
-        //document.write("<h1>" + name + "</h1>");
+            //身高 體重 輸入不能為空
+            // or => || and => &&
 
-        document.write(`<h1>${name}</h1>`);
-        document.write(`<li>身高${height}</li>`);
-        document.write(`<li>體重${weight}</li>`);
-        document.write(`<li>BMI${bmi.toFixed(2)}</li>`);
+            if (height == "" || weight == "") {
 
+                alert("輸入不能為空!")
+            }
+            else {
+
+                // 身高/體重 1~500
+
+                let bmi = weight / (height / 100) ** 2;
+
+                console.log(name, height, weight, bmi);
+
+                if (isNaN(bmi)) {
+                    alert("輸入不正確!");
+                } else {
+
+                    //document.write("<h1>" + name + "</h1>");
+
+                    document.write(`<h1>${name}</h1>`);
+                    document.write(`<li>身高${height}</li>`);
+                    document.write(`<li>體重${weight}</li>`);
+                    document.write(`<li>BMI${bmi.toFixed(2)}</li>`);
+                    count++;
+                }
+            }
+            //count+=1
+
+        }
         //document.write("<br>" + name + "bmi" + bmi.toFixed(2));
 
     </script>
